@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7mqn0uudhw5q"]
+[gd_scene load_steps=4 format=3 uid="uid://b7mqn0uudhw5q"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_ahkip"]
 [ext_resource type="Texture2D" uid="uid://cac1tslnhjapi" path="res://playerred.png" id="1_flrmr"]
-[ext_resource type="Texture2D" uid="uid://b5trr4v3ekrh5" path="res://icon.svg" id="3_un3yh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hsytl"]
 size = Vector2(16, 16)
@@ -19,10 +18,5 @@ texture = ExtResource("1_flrmr")
 shape = SubResource("RectangleShape2D_hsytl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.7, 1.7)
-
-[node name="Icon" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(150, 90)
-scale = Vector2(4.10938, 2.4375)
-texture = ExtResource("3_un3yh")
+zoom = Vector2(1.8, 1.8)
+position_smoothing_enabled = true

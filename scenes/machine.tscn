@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://3m5js6o6q5xn"]
+
+[ext_resource type="Texture2D" uid="uid://byg2f0ck38p2q" path="res://scripts/machines/machine1.png" id="1_0l3jh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbykw"]
+size = Vector2(32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_0l3jh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lbykw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

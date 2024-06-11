@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b7mqn0uudhw5q"]
 
-[ext_resource type="Script" path="res://scenes/player.gd" id="1_ahkip"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_ahkip"]
 [ext_resource type="Texture2D" uid="uid://cac1tslnhjapi" path="res://playerred.png" id="1_flrmr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hsytl"]
@@ -18,5 +18,7 @@ texture = ExtResource("1_flrmr")
 shape = SubResource("RectangleShape2D_hsytl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.8, 1.8)
+position = Vector2(-1, 1)
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
+position_smoothing_speed = 15.0

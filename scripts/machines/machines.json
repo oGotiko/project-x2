@@ -1,5 +1,10 @@
 {
-	"machines": [
-		
-	]
+    "machines": [
+     {
+        "name": "Mineradora a Carvão",
+        "type": "excavator",
+        "idMachine": 1,
+        "speed": 30
+     }
+    ]
 }
